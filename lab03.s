@@ -77,7 +77,7 @@ showRowLoop:
     add  t1, zero, zero # column counter
 showColumnLoop:
     bge  t1, a2, outShowColumnLoop
-    lbu  t2, 0(a0) # get red
+    lbu  t1, 0(a0) # get red
     lbu  t3, 1(a0) # get green
     lbu  t4, 2(a0) # get blue
     slli t2, t2, 16  # place red at the 3rd byte of "led" word
